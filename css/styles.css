@@ -138,7 +138,8 @@ img {
   line-height: 1.62;
   letter-spacing: inherit;
   transition: color var(--transition-time) var(--transition-time-func),
-    box-shadow var(--transition-time) var(--transition-time-func);
+    box-shadow var(--transition-time) var(--transition-time-func),
+    background-color var(--transition-time) var(--transition-time-func);
 }
 
 .button.filter:hover,
