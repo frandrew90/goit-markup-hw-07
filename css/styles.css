@@ -18,7 +18,7 @@
 
   /* -------------Переменные переходов */
 
-  --transition-time: 250ms;
+  --transition-time: 1000ms;
   --transition-time-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -119,6 +119,11 @@ img {
   border: 2px solid transparent;
   border-radius: 4px;
   cursor: pointer;
+  font-family: inherit;
+  font-style: 16px;
+  transition: background-color var(--transition-time)
+      var(--transition-time-func),
+    box-shadow var(--transition-time) var(--transition-time-func);
 }
 
 .button.filter {
@@ -127,14 +132,13 @@ img {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
 
-  font-family: inherit;
+  /* font-family: inherit; */
   font-weight: 500;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.62;
   letter-spacing: inherit;
-  transition: background-color var(--transition-time)
-      var(--transition-time-func),
-    color var(--transition-time) var(--transition-time-func);
+  transition: color var(--transition-time) var(--transition-time-func),
+    box-shadow var(--transition-time) var(--transition-time-func);
 }
 
 .button.filter:hover,
@@ -142,11 +146,13 @@ img {
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
 
-  font-family: inherit;
+  /* font-family: inherit; */
   font-weight: 500;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.62;
   letter-spacing: inherit;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Ссылки на соц.сети */
@@ -352,15 +358,15 @@ img {
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
 
-  font-family: inherit;
+  /* font-family: inherit; */
   font-weight: 700;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  transition: background-color var(--transition-time)
+  /* transition: background-color var(--transition-time)
       var(--transition-time-func),
-    box-shadow var(--transition-time) var(--transition-time-func);
+    box-shadow var(--transition-time) var(--transition-time-func); */
 }
 
 .button.primary:hover,
@@ -613,7 +619,7 @@ img {
   position: relative;
 }
 
-.filter-item::after {
+/* .filter-item::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -636,7 +642,7 @@ img {
 
 .filter-item:hover::after {
   opacity: 1;
-}
+} */
 
 /* Карточки секции Примеры */
 
@@ -897,9 +903,9 @@ img {
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
 
-  font-family: inherit;
+  /* font-family: inherit; */
   font-weight: 700;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.87;
   letter-spacing: 0.06em;
 
@@ -907,9 +913,9 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition: background-color var(--transition-time)
+  /* transition: background-color var(--transition-time)
       var(--transition-time-func),
-    box-shadow var(--transition-time) var(--transition-time-func);
+    box-shadow var(--transition-time) var(--transition-time-func); */
 }
 
 .footer-btn:hover,
