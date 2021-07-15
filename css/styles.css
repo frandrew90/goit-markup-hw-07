@@ -248,7 +248,7 @@ p {
   color: var(--primary-accent-color);
 }
 
-/* ---------Полоска активной вкладки position: relative строка 212 */
+/* ---------Полоска активной вкладки  */
 
 .site-nav__link.current::after {
   content: "";
@@ -274,11 +274,6 @@ p {
   margin-left: auto;
 }
 
-.header-contacts .link {
-  transition: color var(--transition-time) var(--transition-time-func),
-    fill var(--transition-time) var(--transition-time-func);
-}
-
 .header-contacts__item {
   display: flex;
   align-items: center;
@@ -286,6 +281,8 @@ p {
 
 .header-contacts__link {
   display: flex;
+  transition: color var(--transition-time) var(--transition-time-func),
+    fill var(--transition-time) var(--transition-time-func);
 }
 
 .header-contacts__icon {
