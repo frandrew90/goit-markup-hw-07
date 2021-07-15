@@ -127,10 +127,29 @@ p {
   display: inline-block;
 }
 
+/* Sections */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 /* ------------------------------------------- */
 
+/* ---------------------------------------------------start */
 /* Кнопки */
 
 .button {
@@ -143,6 +162,27 @@ p {
       var(--transition-time-func),
     box-shadow var(--transition-time) var(--transition-time-func);
 }
+
+.button--primary {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+
+  color: var(--secondary-accent-color);
+  background-color: var(--primary-accent-color);
+
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+
+.button--primary:hover,
+.button--primary:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ______________________________________________________end */
 
 .button.filter {
   padding: 4px 20px;
@@ -188,6 +228,7 @@ p {
   height: 20px;
 }
 
+/* -------------------------------------------start */
 /* HEADER */
 
 .page-header {
@@ -307,24 +348,6 @@ p {
   fill: var(--primary-accent-color);
 }
 
-/* Sections */
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-title {
-  margin-bottom: 50px;
-
-  color: var(--title-text-color);
-
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-}
-
 /* Hero */
 
 .hero {
@@ -389,6 +412,8 @@ p {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+/* ---------------------------------------------------end */
 
 /* Секция преймущества */
 
@@ -780,6 +805,8 @@ p {
   border: 1px solid #eeeeee;
 } */
 
+/* -------------------------------------start */
+
 /* футер */
 
 .page-footer {
@@ -800,6 +827,8 @@ p {
 .logo--footer-logo {
   margin-bottom: 20px;
 }
+
+/* -----------------------------------------------end */
 
 .page-footer address {
   margin-bottom: 9px;
