@@ -712,6 +712,21 @@ p {
 
 /* Карточки секции Примеры */
 
+.example-list {
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-bottom: calc(-1 * var(--card-set-gap));
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example-list__item {
+  margin-left: var(--card-set-gap);
+  margin-bottom: var(--card-set-gap);
+  flex-basis: calc((100% / 3) - var(--card-set-gap));
+  position: relative;
+}
+
 .example-list__item:hover,
 .example-list__item:focus {
   cursor: pointer;
@@ -720,9 +735,9 @@ p {
     1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 
-.example-list__item {
+/* .example-list__item {
   position: relative;
-}
+} */
 
 .example-list__item::after {
   display: inline-block;
@@ -806,20 +821,6 @@ p {
   font-size: 16px;
   line-height: 1.87;
   text-align: left;
-}
-
-.example-list {
-  margin-left: calc(-1 * var(--card-set-gap));
-  margin-bottom: calc(-1 * var(--card-set-gap));
-
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.example-list__item {
-  margin-left: var(--card-set-gap);
-  margin-bottom: var(--card-set-gap);
-  flex-basis: calc((100% / 3) - var(--card-set-gap));
 }
 
 /* .card-thumb {
