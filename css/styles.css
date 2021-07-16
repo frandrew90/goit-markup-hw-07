@@ -1120,7 +1120,7 @@ p {
   color: var(--primary-accent-color);
 }
 
-.input-check-text {
+.modal__input-check-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
@@ -1133,13 +1133,13 @@ p {
   align-items: center;
 }
 
-.input-check-text a {
+.modal__privacy-link {
   color: var(--primary-accent-color);
   display: block;
   /* margin-left: 5px; */
 }
 
-.input-check-text span {
+.modal__input-check-text .modal__check-icon-wrapper {
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-text-color);
@@ -1150,11 +1150,11 @@ p {
   justify-content: center;
 }
 
-.check-icon {
+.modal__check-icon {
   fill: var(--secondary-accent-color);
 }
 
-.modal__input-check:checked + .input-check-text span {
+.modal__input-check:checked + .modal__input-check-text span {
   background-color: var(--primary-accent-color);
   border: none;
 }
