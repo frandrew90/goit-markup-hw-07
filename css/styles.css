@@ -18,7 +18,7 @@
 
   /* -------------Переменные переходов */
 
-  --transition-time: 500ms;
+  --transition-time: 250ms;
   --transition-time-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -134,13 +134,15 @@ p {
   padding-bottom: 94px;
 }
 
-.section__title {
-  color: var(--title-text-color);
-
+.section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+}
+
+.section-title--color--dark {
+  color: var(--title-text-color);
 }
 
 /* ------------------------------------------- */
