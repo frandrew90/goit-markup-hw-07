@@ -13,6 +13,14 @@
 .social-list__link {
   display: flex;
   align-items: center;
+  &:hover .social-list__icon,
+  &:focus .social-list__icon {
+    fill: var(--secondary-accent-color);
+  }
+  &:hover .social-list__box,
+  &:focus .social-list__box {
+    background-color: var(--primary-accent-color);
+  }
 }
 
 .social-list__icon {
@@ -23,11 +31,6 @@
   transition: fill var(--transition-time) var(--transition-time-func);
 }
 
-.social-list__link:hover .social-list__icon,
-.social-list__link:focus .social-list__icon {
-  fill: var(--secondary-accent-color);
-}
-
 .social-list__box {
   display: flex;
   justify-content: center;
@@ -36,9 +39,4 @@
   border-radius: 50%;
   transition: background-color var(--transition-time)
     var(--transition-time-func);
-}
-
-.social-list__link:hover .social-list__box,
-.social-list__link:focus .social-list__box {
-  background-color: var(--primary-accent-color);
 }
