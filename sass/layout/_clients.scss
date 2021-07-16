@@ -21,6 +21,10 @@
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: border var(--transition-time) var(--transition-time-func);
+  .clients-list__link:hover &,
+  .clients-list__link:focus & {
+    border: 1px solid var(--primary-accent-color);
+  }
 }
 
 .clients-list__icon {
@@ -28,14 +32,8 @@
   height: 60px;
   fill: #afb1b8;
   transition: fill var(--transition-time) var(--transition-time-func);
-}
-
-.clients-list__link:hover .clients-list__icon,
-.clients-list__link:focus .clients-list__icon {
-  fill: var(--primary-accent-color);
-}
-
-.clients-list__link:hover .clients-list__box,
-.clients-list__link:focus .clients-list__box {
-  border: 1px solid var(--primary-accent-color);
+  .clients-list__link:hover &,
+  .clients-list__link:focus & {
+    fill: var(--primary-accent-color);
+  }
 }

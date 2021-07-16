@@ -647,6 +647,11 @@ img {
   transition: border var(--transition-time) var(--transition-time-func);
 }
 
+.clients-list__link:hover .clients-list__box,
+.clients-list__link:focus .clients-list__box {
+  border: 1px solid var(--primary-accent-color);
+}
+
 .clients-list__icon {
   width: 106px;
   height: 60px;
@@ -657,11 +662,6 @@ img {
 .clients-list__link:hover .clients-list__icon,
 .clients-list__link:focus .clients-list__icon {
   fill: var(--primary-accent-color);
-}
-
-.clients-list__link:hover .clients-list__box,
-.clients-list__link:focus .clients-list__box {
-  border: 1px solid var(--primary-accent-color);
 }
 
 .page-footer {
@@ -841,8 +841,7 @@ img {
   position: relative;
 }
 
-.example-list__item:hover,
-.example-list__item:focus {
+.example-list__item:hover, .example-list__item:focus {
   cursor: pointer;
 }
 
