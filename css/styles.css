@@ -431,13 +431,13 @@ p {
   display: flex;
 }
 
-.advantages-item {
+.advantages-list__item {
   margin-left: var(--card-set-gap);
 
   flex-basis: calc((100% / 4) - var(--card-set-gap));
 }
 
-.advantages-item-box {
+.advantages-list__box {
   width: 270px;
   height: 120px;
   border-radius: 4px;
@@ -447,12 +447,7 @@ p {
   background-color: var(--primary-bg-color);
 }
 
-.advantages-icon {
-  width: 70px;
-  height: 70px;
-}
-
-.advantages-list-title {
+.advantages-list__title {
   margin-bottom: 10px;
 
   color: var(--title-text-color);
