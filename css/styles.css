@@ -558,47 +558,53 @@ p {
   margin-bottom: 30px;
 } */
 
-.team .social-list {
+/* ------------------------SOCIAL-LIST------------- */
+.social-list {
   margin-left: -10px;
 
   display: flex;
 }
 
-.team .social-item {
+.social-list__item {
   margin-left: 10px;
 
   flex-basis: calc((100% / 3) - 10px);
 }
 
-.social-item .link {
+.social-list__link {
   display: flex;
   align-items: center;
 }
 
-.team .social-item .link .social-icon {
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  align-self: center;
   transition: fill var(--transition-time) var(--transition-time-func);
 }
 
-.team .social-item .link:hover .social-icon,
-.team .social-item .link:focus .social-icon {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
   fill: var(--secondary-accent-color);
 }
 
-.team .social-item .link .social-box {
+.social-list__box {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   transition: background-color var(--transition-time)
     var(--transition-time-func);
 }
 
-.team .social-item .link:hover .social-box,
-.team .social-item .link:hover .social-box {
+.social-list__link:hover .social-list__box,
+.social-list__link:focus .social-list__box {
   background-color: var(--primary-accent-color);
 }
 
-.team .social-icon {
-  fill: #afb1b8;
-  align-self: center;
-}
+/* ------------------------SOCIAL-LIST------------- */
 
 /* Секция Постоянные клиенты */
 
