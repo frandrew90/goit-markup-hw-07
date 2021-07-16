@@ -194,8 +194,7 @@ img {
   transition: border-color var(--transition-time) var(--transition-time-func), fill var(--transition-time) var(--transition-time-func);
 }
 
-.modal__form-input:focus,
-.modal__form-input:hover {
+.modal__form-input:focus, .modal__form-input:hover {
   border-color: var(--primary-accent-color);
 }
 
@@ -209,9 +208,12 @@ img {
   border-color: var(--primary-accent-color);
 }
 
-.modal__input-icon:hover,
-.modal__input-icon:focus {
-  fill: var(--primary-accent-color);
+.modal__form-input::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  transition: color var(--transition-time) var(--transition-time-func);
 }
 
 .modal__input-text {
@@ -241,6 +243,10 @@ img {
   transition: fill var(--transition-time) var(--transition-time-func);
 }
 
+.modal__input-icon:hover, .modal__input-icon:focus {
+  fill: var(--primary-accent-color);
+}
+
 .modal__form-text {
   width: 100%;
   height: 120px;
@@ -254,23 +260,20 @@ img {
   transition: border-color var(--transition-time) var(--transition-time-func);
 }
 
-.modal__form-text:focus,
-.modal__form-text:hover {
+.modal__form-text:focus, .modal__form-text:hover {
   border-color: var(--primary-accent-color);
 }
 
-.modal__form-input::placeholder,
+.modal__form-text:hover::placeholder, .modal__form-text:focus::placeholder {
+  color: var(--primary-accent-color);
+}
+
 .modal__form-text::placeholder {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   transition: color var(--transition-time) var(--transition-time-func);
-}
-
-.modal__form-text:hover::placeholder,
-.modal__form-text:focus::placeholder {
-  color: var(--primary-accent-color);
 }
 
 .modal__input-check-text {
@@ -288,7 +291,7 @@ img {
   display: block;
 }
 
-.modal__input-check-text .modal__check-icon-wrapper {
+.modal__check-icon-wrapper {
   width: 16px;
   height: 15px;
   border: 2px solid var(--title-text-color);
@@ -303,7 +306,9 @@ img {
   fill: var(--secondary-accent-color);
 }
 
-.modal__input-check:checked + .modal__input-check-text span {
+.modal__input-check:checked
++ .modal__input-check-text
+.modal__check-icon-wrapper {
   background-color: var(--primary-accent-color);
   border: none;
 }
