@@ -182,7 +182,7 @@ p {
 
 /* ______________________________________________________end */
 
-.button.filter {
+.button__filter {
   padding: 4px 20px;
 
   color: var(--title-text-color);
@@ -198,8 +198,8 @@ p {
     background-color var(--transition-time) var(--transition-time-func);
 }
 
-.button.filter:hover,
-.button.filter:focus {
+.button__filter:hover,
+.button__filter:focus {
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
 
@@ -348,7 +348,7 @@ p {
 
 /* Hero */
 
-.hero {
+.hero__container {
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -364,7 +364,7 @@ p {
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   margin-top: 0;
   margin-right: auto;
@@ -381,7 +381,7 @@ p {
 }
 
 /* HERO-кнопка */
-.button.primary {
+/* .button.primary {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: auto;
@@ -394,16 +394,16 @@ p {
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
 
-  /* font-family: inherit; */
+  font-family: inherit;
   font-weight: 700;
-  /* font-size: 16px; */
+  font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06em; */
 
-  /* transition: background-color var(--transition-time)
+/* transition: background-color var(--transition-time)
       var(--transition-time-func),
     box-shadow var(--transition-time) var(--transition-time-func); */
-}
+/* } */
 
 .button.primary:hover,
 .button.primary:focus {
@@ -677,11 +677,11 @@ p {
   justify-content: center;
 }
 
-.filter-item:not(:last-child) {
+.filter-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-item {
+.filter-list__item {
   position: relative;
 }
 
