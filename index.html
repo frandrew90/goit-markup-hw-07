@@ -542,22 +542,24 @@
 
     <!-- Футер -->
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--theme--dark">
       <div class="footer-info container">
         <div class="footer-contacts">
           <a href="./index.html" class="link logo logo--footer-logo"
             >Web<span class="logo--light-logo">Studio</span></a
           >
-          <address>г. Киев, пр-т Леси Украинки, 26</address>
-          <ul class="footer-contacts list">
-            <li class="footer-contacts-item">
+          <address class="footer-contacts__address">
+            г. Киев, пр-т Леси Украинки, 26
+          </address>
+          <ul class="footer-contacts-list list">
+            <li class="footer-contacts-list__item">
               <a
                 href="mailto:info@devstudio.com"
                 class="footer-contacts__link link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="footer-contacts-item">
+            <li class="footer-contacts-list__item">
               <a href="tel:+380961111111" class="footer-contacts__link link"
                 >+38 096 111 11 11</a
               >
@@ -565,44 +567,54 @@
           </ul>
         </div>
 
+        <!-- ____________________________________________end -->
+
         <div class="footer-links">
-          <h2 class="footer-title">Присоединяйтесь</h2>
+          <h2 class="footer-links__title">Присоединяйтесь</h2>
 
           <ul class="list social-list">
-            <li class="social-item">
-              <a href="#" class="link">
-                <div class="social-box">
-                  <svg class="social-icon">
+            <li class="social-list__item">
+              <a href="#" class="link social-list__link">
+                <div class="social-list__box social-list__box--theme-dark">
+                  <svg
+                    class="social-list__icon social-list__icon--color--light"
+                  >
                     <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                   </svg>
                 </div>
               </a>
             </li>
 
-            <li class="social-item">
-              <a href="#" class="link">
-                <div class="social-box">
-                  <svg class="social-icon">
+            <li class="social-list__item">
+              <a href="#" class="link social-list__link">
+                <div class="social-list__box social-list__box--theme-dark">
+                  <svg
+                    class="social-list__icon social-list__icon--color--light"
+                  >
                     <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                   </svg>
                 </div>
               </a>
             </li>
 
-            <li class="social-item">
-              <a href="#" class="link">
-                <div class="social-box">
-                  <svg class="social-icon">
+            <li class="social-list__item">
+              <a href="#" class="link social-list__link">
+                <div class="social-list__box social-list__box--theme-dark">
+                  <svg
+                    class="social-list__icon social-list__icon--color--light"
+                  >
                     <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                   </svg>
                 </div>
               </a>
             </li>
 
-            <li class="social-item">
-              <a href="#" class="link">
-                <div class="social-box">
-                  <svg class="social-icon">
+            <li class="social-list__item">
+              <a href="#" class="link social-list__link">
+                <div class="social-list__box social-list__box--theme-dark">
+                  <svg
+                    class="social-list__icon social-list__icon--color--light"
+                  >
                     <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                   </svg>
                 </div>
@@ -612,22 +624,29 @@
         </div>
 
         <div class="subscription">
-          <h2 class="footer-title">Подпишитесь на рассылку</h2>
+          <h2 class="subscription__title">Подпишитесь на рассылку</h2>
 
           <div class="subscription-box">
-            <form class="form">
+            <form class="subscription-form">
               <label for="">
                 <input
                   type="email"
                   name="email"
                   placeholder="E-mail"
-                  class="ft-input"
+                  class="subscription-form__input"
                 />
               </label>
-              <button type="submit" class="footer-btn button">
+              <button
+                type="submit"
+                class="button button--primary button__footer-btn"
+              >
                 Подписаться
-                <svg class="social-icon">
-                  <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+                <svg class="button__icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-icon-send"
+                    width="20"
+                    height="20"
+                  ></use>
                 </svg>
               </button>
             </form>
