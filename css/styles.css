@@ -472,7 +472,7 @@ p {
   display: flex;
 }
 
-.work-item {
+.work-list__item {
   position: relative;
 
   margin-left: var(--card-set-gap);
@@ -480,7 +480,7 @@ p {
   flex-basis: calc((100% / 3) - var(--card-set-gap));
 }
 
-.work-item-text {
+.work-list__text {
   position: absolute;
   width: 100%;
   height: auto;
