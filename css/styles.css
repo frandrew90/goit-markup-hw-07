@@ -135,8 +135,6 @@ p {
 }
 
 .section__title {
-  margin-bottom: 50px;
-
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -422,6 +420,10 @@ p {
   background-color: rgb(131, 71, 71);
 } */
 
+.advantages__title {
+  margin-bottom: 50px;
+}
+
 .advantages-list {
   margin-left: calc(-1 * var(--card-set-gap));
 
@@ -466,6 +468,10 @@ p {
   text-align: center;
 }
 
+.work__title {
+  margin-bottom: 50px;
+}
+
 .work-list {
   margin-left: calc(-1 * var(--card-set-gap));
 
@@ -506,6 +512,10 @@ p {
 
 .team {
   background-color: var(--secondary-bg-color);
+}
+
+.team__title {
+  margin-bottom: 50px;
 }
 
 .team-list {
@@ -607,6 +617,10 @@ p {
 /* ------------------------SOCIAL-LIST------------- */
 
 /* Секция Постоянные клиенты */
+
+.clients__title {
+  margin-bottom: 50px;
+}
 
 .clients-list {
   margin-left: calc(-1 * var(--card-set-gap));
