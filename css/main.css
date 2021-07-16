@@ -799,12 +799,12 @@ img {
   justify-content: center;
 }
 
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filter-list__item {
   position: relative;
+}
+
+.filter-list__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .button__filter {
@@ -817,8 +817,7 @@ img {
   transition: color var(--transition-time) var(--transition-time-func), box-shadow var(--transition-time) var(--transition-time-func), background-color var(--transition-time) var(--transition-time-func);
 }
 
-.button__filter:hover,
-.button__filter:focus {
+.button__filter:hover, .button__filter:focus {
   color: var(--secondary-accent-color);
   background-color: var(--primary-accent-color);
   font-weight: 500;

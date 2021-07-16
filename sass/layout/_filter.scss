@@ -4,12 +4,11 @@
   justify-content: center;
 }
 
-.filter-list__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filter-list__item {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .button__filter {
@@ -22,15 +21,14 @@
   transition: color var(--transition-time) var(--transition-time-func),
     box-shadow var(--transition-time) var(--transition-time-func),
     background-color var(--transition-time) var(--transition-time-func);
-}
-
-.button__filter:hover,
-.button__filter:focus {
-  color: var(--secondary-accent-color);
-  background-color: var(--primary-accent-color);
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: inherit;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    color: var(--secondary-accent-color);
+    background-color: var(--primary-accent-color);
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: inherit;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
