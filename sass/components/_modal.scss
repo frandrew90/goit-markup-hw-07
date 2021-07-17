@@ -25,143 +25,143 @@
   opacity: 1;
   transition: opacity $transition-time $transition-time-func,
     transform $transition-time $transition-time-func;
-}
 
-&__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 12px;
-  display: inline-block;
-  color: $title-text-color;
-}
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+    display: inline-block;
+    color: $title-text-color;
+  }
 
-&__form-input {
-  width: 100%;
-  height: 40px;
-  padding-left: 42px;
-  outline: none;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: border-color $transition-time $transition-time-func,
-    fill $transition-time $transition-time-func;
-  &:focus,
-  &:hover {
-    border-color: $primary-accent-color;
+  &__form-input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color $transition-time $transition-time-func,
+      fill $transition-time $transition-time-func;
+    &:focus,
+    &:hover {
+      border-color: $primary-accent-color;
+    }
+    &:focus + .modal__input-icon,
+    &:hover + .modal__input-icon {
+      fill: $primary-accent-color;
+    }
+    &__input-icon:hover ~ &,
+    &__input-icon:focus ~ & {
+      border-color: $primary-accent-color;
+    }
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      transition: color $transition-time $transition-time-func;
+    }
   }
-  &:focus + .modal__input-icon,
-  &:hover + .modal__input-icon {
-    fill: $primary-accent-color;
-  }
-  &__input-icon:hover ~ &,
-  &__input-icon:focus ~ & {
-    border-color: $primary-accent-color;
-  }
-  &::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
+
+  &__input-text {
+    margin-bottom: 4px;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    transition: color $transition-time $transition-time-func;
+
+    color: $primary-text-color;
   }
-}
 
-&__input-text {
-  margin-bottom: 4px;
-  display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
-  color: $primary-text-color;
-}
-
-&__form-field {
-  margin-bottom: 10px;
-}
-
-&__input-wrapper {
-  position: relative;
-  cursor: pointer;
-}
-
-&__input-icon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: fill $transition-time $transition-time-func;
-  &:hover,
-  &:focus {
-    fill: $primary-accent-color;
+  &__form-field {
+    margin-bottom: 10px;
   }
-}
 
-&__form-text {
-  width: 100%;
-  height: 120px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  padding: 12px 16px;
-  resize: none;
-  cursor: pointer;
-  outline: none;
-  transition: border-color $transition-time $transition-time-func;
-  &:focus,
-  &:hover {
-    border-color: $primary-accent-color;
+  &__input-wrapper {
+    position: relative;
+    cursor: pointer;
   }
-  &:hover::placeholder,
-  &:focus::placeholder {
+
+  &__input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill $transition-time $transition-time-func;
+    &:hover,
+    &:focus {
+      fill: $primary-accent-color;
+    }
+  }
+
+  &__form-text {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    padding: 12px 16px;
+    resize: none;
+    cursor: pointer;
+    outline: none;
+    transition: border-color $transition-time $transition-time-func;
+    &:focus,
+    &:hover {
+      border-color: $primary-accent-color;
+    }
+    &:hover::placeholder,
+    &:focus::placeholder {
+      color: $primary-accent-color;
+    }
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      transition: color $transition-time $transition-time-func;
+    }
+  }
+
+  &__input-check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71px;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    display: flex;
+    align-items: center;
+  }
+
+  &__privacy-link {
     color: $primary-accent-color;
+    display: block;
   }
-  &::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    transition: color $transition-time $transition-time-func;
+
+  &__check-icon-wrapper {
+    width: 16px;
+    height: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-}
 
-&__input-check-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71px;
-  letter-spacing: 0.03em;
-  color: $primary-text-color;
-  display: flex;
-  align-items: center;
-}
+  &__check-icon {
+    fill: $secondary-accent-color;
+  }
 
-&__privacy-link {
-  color: $primary-accent-color;
-  display: block;
-}
-
-&__check-icon-wrapper {
-  width: 16px;
-  height: 15px;
-  border: 2px solid $title-text-color;
-  border-radius: 2px;
-  margin-right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-&__check-icon {
-  fill: $secondary-accent-color;
-}
-
-&__input-check:checked + &__input-check-text &__check-icon-wrapper {
-  background-color: $primary-accent-color;
-  border: none;
+  &__input-check:checked + &__input-check-text &__check-icon-wrapper {
+    background-color: $primary-accent-color;
+    border: none;
+  }
 }
 
 .button--modal {
