@@ -203,8 +203,8 @@ img {
   fill: #2196f3;
 }
 
-.modal__input-icon:hover ~ .modal__form-input,
-.modal__input-icon:focus ~ .modal__form-input {
+.modal__form-input__input-icon:hover ~ .modal__form-input,
+.modal__form-input__input-icon:focus ~ .modal__form-input {
   border-color: #2196f3;
 }
 
@@ -306,9 +306,7 @@ img {
   fill: #ffffff;
 }
 
-.modal__input-check:checked
-+ .modal__input-check-text
-.modal__check-icon-wrapper {
+.modal__input-check:checked + .modal__input-check-text .modal__check-icon-wrapper {
   background-color: #2196f3;
   border: none;
 }
@@ -504,15 +502,15 @@ img {
 }
 
 .advantages-list {
-  margin-left: calc(-1 * var(--card-set-gap));
+  margin-left: calc(-1 * $card-set-gap);
   font-size: 14px;
   line-height: 1.71;
   display: flex;
 }
 
 .advantages-list__item {
-  margin-left: var(--card-set-gap);
-  flex-basis: calc((100% / 4) - var(--card-set-gap));
+  margin-left: 30px;
+  flex-basis: calc((100% / 4) - $card-set-gap);
 }
 
 .advantages-list__box {
@@ -521,12 +519,12 @@ img {
   border-radius: 4px;
   padding: 25px 100px;
   margin-bottom: 30px;
-  background-color: var(--primary-bg-color);
+  background-color: #f5f4fa;
 }
 
 .advantages-list__title {
   margin-bottom: 10px;
-  color: var(--title-text-color);
+  color: #212121;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
