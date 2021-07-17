@@ -803,17 +803,17 @@ img {
 
 .button__filter {
   padding: 4px 20px;
-  color: var(--title-text-color);
-  background-color: var(--primary-bg-color);
+  color: #212121;
+  background-color: #f5f4fa;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: inherit;
-  transition: color var(--transition-time) var(--transition-time-func), box-shadow var(--transition-time) var(--transition-time-func), background-color var(--transition-time) var(--transition-time-func);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button__filter:hover, .button__filter:focus {
-  color: var(--secondary-accent-color);
-  background-color: var(--primary-accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: inherit;

@@ -13,18 +13,18 @@
 
 .button__filter {
   padding: 4px 20px;
-  color: var(--title-text-color);
-  background-color: var(--primary-bg-color);
+  color: $title-text-color;
+  background-color: $primary-bg-color;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: inherit;
-  transition: color var(--transition-time) var(--transition-time-func),
-    box-shadow var(--transition-time) var(--transition-time-func),
-    background-color var(--transition-time) var(--transition-time-func);
+  transition: color $transition-time $transition-time-func,
+    box-shadow $transition-time $transition-time-func,
+    background-color $transition-time $transition-time-func;
   &:hover,
   &:focus {
-    color: var(--secondary-accent-color);
-    background-color: var(--primary-accent-color);
+    color: $secondary-accent-color;
+    background-color: $primary-accent-color;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: inherit;
