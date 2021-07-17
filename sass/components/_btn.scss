@@ -4,7 +4,6 @@
   cursor: pointer;
   font-family: inherit;
   font-style: 16px;
-  transition: background-color var(--transition-time)
-      var(--transition-time-func),
-    box-shadow var(--transition-time) var(--transition-time-func);
+  transition: background-color $transition-time $transition-time-func,
+    box-shadow $transition-time $transition-time-func;
 }

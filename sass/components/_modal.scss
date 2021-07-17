@@ -5,15 +5,15 @@
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-time) var(--transition-time-func),
-    transform var(--transition-time) var(--transition-time-func);
+  transition: opacity $transition-time $transition-time-func,
+    transform transition-time $transition-time-func;
 }
 
 .modal {
   width: 528px;
   min-height: 581px;
   padding: 40px;
-  background: var(--secondary-accent-color);
+  background: $secondary-accent-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -23,11 +23,11 @@
   transform: scale(1);
   transform: translate(-50%, -50%);
   opacity: 1;
-  transition: opacity var(--transition-time) var(--transition-time-func),
-    transform var(--transition-time) var(--transition-time-func);
+  transition: opacity $transition-time $transition-time-func,
+    transform $transition-time $transition-time-func;
 }
 
-.modal__title {
+&__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -35,10 +35,10 @@
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   display: inline-block;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
-.modal__form-input {
+&__form-input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -46,30 +46,30 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-  transition: border-color var(--transition-time) var(--transition-time-func),
-    fill var(--transition-time) var(--transition-time-func);
+  transition: border-color $transition-time $transition-time-func,
+    fill $transition-time $transition-time-func;
   &:focus,
   &:hover {
-    border-color: var(--primary-accent-color);
+    border-color: $primary-accent-color;
   }
   &:focus + .modal__input-icon,
   &:hover + .modal__input-icon {
-    fill: var(--primary-accent-color);
+    fill: $primary-accent-color;
   }
-  .modal__input-icon:hover ~ &,
-  .modal__input-icon:focus ~ & {
-    border-color: var(--primary-accent-color);
+  &__input-icon:hover ~ &,
+  &__input-icon:focus ~ & {
+    border-color: $primary-accent-color;
   }
   &::placeholder {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-    transition: color var(--transition-time) var(--transition-time-func);
+    transition: color $transition-time $transition-time-func;
   }
 }
 
-.modal__input-text {
+&__input-text {
   margin-bottom: 4px;
   display: block;
   font-weight: 400;
@@ -77,31 +77,31 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
 
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
-.modal__form-field {
+&__form-field {
   margin-bottom: 10px;
 }
 
-.modal__input-wrapper {
+&__input-wrapper {
   position: relative;
   cursor: pointer;
 }
 
-.modal__input-icon {
+&__input-icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill var(--transition-time) var(--transition-time-func);
+  transition: fill $transition-time $transition-time-func;
   &:hover,
   &:focus {
-    fill: var(--primary-accent-color);
+    fill: $primary-accent-color;
   }
 }
 
-.modal__form-text {
+&__form-text {
   width: 100%;
   height: 120px;
   margin-bottom: 20px;
@@ -111,43 +111,43 @@
   resize: none;
   cursor: pointer;
   outline: none;
-  transition: border-color var(--transition-time) var(--transition-time-func);
+  transition: border-color $transition-time $transition-time-func;
   &:focus,
   &:hover {
-    border-color: var(--primary-accent-color);
+    border-color: $primary-accent-color;
   }
   &:hover::placeholder,
   &:focus::placeholder {
-    color: var(--primary-accent-color);
+    color: $primary-accent-color;
   }
   &::placeholder {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-    transition: color var(--transition-time) var(--transition-time-func);
+    transition: color $transition-time $transition-time-func;
   }
 }
 
-.modal__input-check-text {
+&__input-check-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
   display: flex;
   align-items: center;
 }
 
-.modal__privacy-link {
-  color: var(--primary-accent-color);
+&__privacy-link {
+  color: $primary-accent-color;
   display: block;
 }
 
-.modal__check-icon-wrapper {
+&__check-icon-wrapper {
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid $title-text-color;
   border-radius: 2px;
   margin-right: 8px;
   display: flex;
@@ -155,14 +155,12 @@
   justify-content: center;
 }
 
-.modal__check-icon {
-  fill: var(--secondary-accent-color);
+&__check-icon {
+  fill: $secondary-accent-color;
 }
 
-.modal__input-check:checked
-  + .modal__input-check-text
-  .modal__check-icon-wrapper {
-  background-color: var(--primary-accent-color);
+&__input-check:checked + &__input-check-text &__check-icon-wrapper {
+  background-color: $primary-accent-color;
   border: none;
 }
 
@@ -172,13 +170,6 @@
   display: block;
   margin-top: 30px;
   padding: 8px 53px;
-}
-
-.close-btn__icon {
-  width: 11px;
-  height: 11px;
-  fill: #000000;
-  transition: fill var(--transition-time) var(--transition-time-func);
 }
 
 .close-btn {
@@ -192,7 +183,14 @@
   background: transparent;
   cursor: pointer;
   &:hover .close-btn__icon {
-    fill: var(--primary-accent-color);
+    fill: $primary-accent-color;
+  }
+
+  &__icon {
+    width: 11px;
+    height: 11px;
+    fill: #000000;
+    transition: fill $transition-time $transition-time-func;
   }
 }
 

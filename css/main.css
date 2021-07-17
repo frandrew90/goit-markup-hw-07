@@ -38,8 +38,8 @@ p {
 }
 
 body {
-  color: var(--primary-text-color);
-  background-color: var(--header-bg-color);
+  color: #757575;
+  background-color: #ffffff;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -72,7 +72,7 @@ img {
   cursor: pointer;
   font-family: inherit;
   font-style: 16px;
-  transition: background-color var(--transition-time) var(--transition-time-func), box-shadow var(--transition-time) var(--transition-time-func);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -83,7 +83,7 @@ img {
 }
 
 .logo {
-  color: var(--primary-accent-color);
+  color: #2196f3;
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -99,7 +99,7 @@ img {
 }
 
 .section-title--color--dark {
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .social-list {
@@ -121,12 +121,12 @@ img {
 
 .social-list__link:hover .social-list__icon,
 .social-list__link:focus .social-list__icon {
-  fill: var(--secondary-accent-color);
+  fill: #ffffff;
 }
 
 .social-list__link:hover .social-list__box,
 .social-list__link:focus .social-list__box {
-  background-color: var(--primary-accent-color);
+  background-color: #2196f3;
 }
 
 .social-list__icon {
@@ -134,7 +134,7 @@ img {
   height: 20px;
   fill: #afb1b8;
   align-self: center;
-  transition: fill var(--transition-time) var(--transition-time-func);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list__box {
@@ -143,7 +143,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color var(--transition-time) var(--transition-time-func);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -153,14 +153,14 @@ img {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-time) var(--transition-time-func), transform var(--transition-time) var(--transition-time-func);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform transition-time cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
   width: 528px;
   min-height: 581px;
   padding: 40px;
-  background: var(--secondary-accent-color);
+  background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
@@ -169,7 +169,7 @@ img {
   transform: scale(1);
   transform: translate(-50%, -50%);
   opacity: 1;
-  transition: opacity var(--transition-time) var(--transition-time-func), transform var(--transition-time) var(--transition-time-func);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__title {
@@ -180,7 +180,7 @@ img {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   display: inline-block;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .modal__form-input {
@@ -191,21 +191,21 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
-  transition: border-color var(--transition-time) var(--transition-time-func), fill var(--transition-time) var(--transition-time-func);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__form-input:focus, .modal__form-input:hover {
-  border-color: var(--primary-accent-color);
+  border-color: #2196f3;
 }
 
 .modal__form-input:focus + .modal__input-icon,
 .modal__form-input:hover + .modal__input-icon {
-  fill: var(--primary-accent-color);
+  fill: #2196f3;
 }
 
 .modal__input-icon:hover ~ .modal__form-input,
 .modal__input-icon:focus ~ .modal__form-input {
-  border-color: var(--primary-accent-color);
+  border-color: #2196f3;
 }
 
 .modal__form-input::placeholder {
@@ -213,7 +213,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  transition: color var(--transition-time) var(--transition-time-func);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__input-text {
@@ -223,7 +223,7 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .modal__form-field {
@@ -240,11 +240,11 @@ img {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill var(--transition-time) var(--transition-time-func);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__input-icon:hover, .modal__input-icon:focus {
-  fill: var(--primary-accent-color);
+  fill: #2196f3;
 }
 
 .modal__form-text {
@@ -257,15 +257,15 @@ img {
   resize: none;
   cursor: pointer;
   outline: none;
-  transition: border-color var(--transition-time) var(--transition-time-func);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__form-text:focus, .modal__form-text:hover {
-  border-color: var(--primary-accent-color);
+  border-color: #2196f3;
 }
 
 .modal__form-text:hover::placeholder, .modal__form-text:focus::placeholder {
-  color: var(--primary-accent-color);
+  color: #2196f3;
 }
 
 .modal__form-text::placeholder {
@@ -273,7 +273,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  transition: color var(--transition-time) var(--transition-time-func);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__input-check-text {
@@ -281,20 +281,20 @@ img {
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #757575;
   display: flex;
   align-items: center;
 }
 
 .modal__privacy-link {
-  color: var(--primary-accent-color);
+  color: #2196f3;
   display: block;
 }
 
 .modal__check-icon-wrapper {
   width: 16px;
   height: 15px;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid #212121;
   border-radius: 2px;
   margin-right: 8px;
   display: flex;
@@ -303,13 +303,13 @@ img {
 }
 
 .modal__check-icon {
-  fill: var(--secondary-accent-color);
+  fill: #ffffff;
 }
 
 .modal__input-check:checked
 + .modal__input-check-text
 .modal__check-icon-wrapper {
-  background-color: var(--primary-accent-color);
+  background-color: #2196f3;
   border: none;
 }
 
@@ -319,13 +319,6 @@ img {
   display: block;
   margin-top: 30px;
   padding: 8px 53px;
-}
-
-.close-btn__icon {
-  width: 11px;
-  height: 11px;
-  fill: #000000;
-  transition: fill var(--transition-time) var(--transition-time-func);
 }
 
 .close-btn {
@@ -341,7 +334,14 @@ img {
 }
 
 .close-btn:hover .close-btn__icon {
-  fill: var(--primary-accent-color);
+  fill: #2196f3;
+}
+
+.close-btn__icon {
+  width: 11px;
+  height: 11px;
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
