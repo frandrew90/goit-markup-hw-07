@@ -699,8 +699,7 @@ img {
   transition: color var(--transition-time) var(--transition-time-func);
 }
 
-.footer-contacts__link:focus,
-.footer-contacts__link:hover {
+.footer-contacts__link:focus, .footer-contacts__link:hover {
   color: var(--primary-accent-color);
 }
 

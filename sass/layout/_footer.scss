@@ -30,11 +30,10 @@
 .footer-contacts__link {
   color: var(--footer-link-color);
   transition: color var(--transition-time) var(--transition-time-func);
-}
-
-.footer-contacts__link:focus,
-.footer-contacts__link:hover {
-  color: var(--primary-accent-color);
+  &:focus,
+  &:hover {
+    color: var(--primary-accent-color);
+  }
 }
 
 .footer-contacts-list__item:not(:last-child) {
@@ -102,14 +101,13 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-}
-
-.subscription-form__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
 }
 
 .button__footer-btn {
