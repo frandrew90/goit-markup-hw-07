@@ -8,7 +8,7 @@
 .example-list__item {
   margin-left: $card-set-gap;
   margin-bottom: $card-set-gap;
-  flex-basis: calc((100% / 3) - $card-set-gap);
+  flex-basis: calc((100% / 3) - 30px);
   position: relative;
 
   &:hover,
