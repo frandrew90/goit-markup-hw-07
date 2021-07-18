@@ -3,11 +3,11 @@
   padding-bottom: 60px;
   font-size: 14px;
   line-height: 1.71;
-}
 
-.page-footer--theme--dark {
-  color: var(--secondary-accent-color);
-  background-color: var(--footer-bg-color);
+  &--theme--dark {
+    color: $secondary-accent-color;
+    background-color: $footer-bg-color;
+  }
 }
 
 .footer-info {
@@ -16,7 +16,7 @@
 }
 
 .logo--light-logo {
-  color: var(--secondary-accent-color);
+  color: $secondary-accent-color;
 }
 
 .logo--footer-logo {
@@ -28,11 +28,11 @@
 }
 
 .footer-contacts__link {
-  color: var(--footer-link-color);
-  transition: color var(--transition-time) var(--transition-time-func);
+  color: $footer-link-color;
+  transition: color $transition-time $transition-time-func;
   &:focus,
   &:hover {
-    color: var(--primary-accent-color);
+    color: $primary-accent-color;
   }
 }
 
@@ -45,13 +45,12 @@
 }
 
 .social-list__icon--color--light {
-  fill: var(--secondary-accent-color);
+  fill: $secondary-accent-color;
 }
 
 .social-list__box--theme-dark {
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color var(--transition-time)
-    var(--transition-time-func);
+  transition: background-color $transition-time $transition-time-func;
 }
 
 .footer-links__title {
@@ -66,26 +65,26 @@
 
 .subscription {
   margin-left: 93px;
-}
 
-.subscription__title {
-  margin-bottom: 20px;
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+  &__title {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 
-.subscription-box {
-  display: flex;
-  align-items: center;
-}
+  &-box {
+    display: flex;
+    align-items: center;
+  }
 
-.subscription-form {
-  display: flex;
-  align-items: center;
+  &-form {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .subscription-form__input {
@@ -122,5 +121,5 @@
   max-height: 44px;
   display: block;
   margin-left: 10px;
-  fill: var(--secondary-accent-color);
+  fill: $secondary-accent-color;
 }
